@@ -18,3 +18,9 @@ Since I have very little experience in web development, I don't have any links t
 1. [FreeCodeCamp](https://www.freecodecamp.org/)
 2. [Coursera](https://www.coursera.org/)
 3. [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+
+## Contributors
+
+Binita Singh
+Computer Science Major
+![Brooklyn Bridge]()

@@ -24,4 +24,6 @@ Since I have very little experience in web development, I don't have any links t
 Binita Singh
 Computer Science Major
 
-![BrooklynBridge](/images/pic.jpg)
+![pic](/images/pic.JPG)
+
+*Brooklyn Bridge!*

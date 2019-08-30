@@ -21,7 +21,7 @@ Since I have very little experience in web development, I don't have any links t
 
 ## Contributors
 
-Binita Singh
+Binita Singh <br />
 Computer Science Major
 
 ![pic](/images/pic.JPG)

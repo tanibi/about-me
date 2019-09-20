@@ -33,3 +33,7 @@ Computer Science
 ![pic](/images/pic.JPG)
 
 *Brooklyn Bridge!*
+
+## References
+1. [w3schools](https://www.w3schools.com)
+2. [Dr. Case](https://profcase.github.io/about-me-20/)

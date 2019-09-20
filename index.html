@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,53 @@
     <link rel = "stylesheet" href = "./css/binita.css">
 
     <title>Binita Singh</title>
+
 </head>
-<body>
-    <header> <h1>Binita Singh</h1>
-        <nav></nav>
+
+<body class="bgimg">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">My Webpage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Temperature</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+     
+    <header class="container-fluid"> 
+        <h1>Binita Singh</h1>
     </header>
-    <article >
-  <h2>About Me</h2>      
-<section>
+
+    <hr />
+    <main class="container-fluid">
+      <div class="row">
+        <article class="col-sm-8 ">   
+            <h2>About Me</h2>   
+            <div class="row">
+
+                    <section class="col-md-5">
  
 <h3>Current</h3>
 
 <p>I am a Computer Science major and I will be graduating in Fall 2020.</p></section>
 
-<section>
+<section class="col-md-5">
     <h3>Background</h3>
 
         <p>I am from Nepal and I graduated high school from Little Angels' School. 
@@ -31,25 +65,64 @@ development but I am familiar with the basic groundwork. I pursued my career
 in CS hoping to expand my knowledge in technology. As for my interest I like 
 creating new things or exploring new ideas.</p></section>
 
-<section><h3>Future</h3></section></article>
-<aside>
-    <h2>Aside</h2>
-        I am really not sure about my future plans but at the moment I am excited 
+<section class="col-md-5">
+    <h3>Future</h3>
+<p>I am really not sure about my future plans but at the moment I am excited 
 about two of my courses this semester, one being Web Apps and the other Android. 
 I am hoping these two courses might help me narrow down my area of interest 
-for I am interested in creating and designing. I like reading books and writing a 
-few paragraphs. Here's my link to my LinkedIn profile: 
+for I am interested in creating and designing. As for my interests I like reading books and writing a 
+few paragraphs in my spare time. </p></section>
 
-https://www.linkedin.com/in/binita-singh-377585107/</aside>
+<section class="col-md-5">
+        <h3>My Favorite Books!</h3>
 
+        <table class="table table-dark">
+          <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+          </tr>
+          <tr>
+            <td>The Alchemist</td>
+            <td>Paulo Coelho</td>
+          </tr>
+          <tr>
+            <td>The Da Vinci Code</td>
+            <td>Dan Brown</td>
+          </tr>
+          <tr>
+            <td>The Kite Runner</td>
+            <td>Khaled Hosseini</td>
+          </tr>
+        </table>
+      </section>
+  </div>
+</article>
+
+<aside class="col-sm-4">
+    <h2>Aside</h2>
+         Links to my profiles: 
+         <ol>
+                <li>
+                       <a href="https://www.linkedin.com/in/binita-singh-377585107/" >LinkedIn</a>
+                </li>
+                <li>
+                       <a href=" https://github.com/tanibi/">GitHub</a>
+                    </li>
+                    </ol>            
+                    <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EAmmUIEsN9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+
+</aside>
+</div>
+</main>
+<hr />
+<footer class="container-fluid">
+        &copy; Binita Singh
+      </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
-
-
-
-
-

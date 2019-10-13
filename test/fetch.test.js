@@ -1,7 +1,7 @@
 QUnit.module('FETCH MODULE', {})
 
 QUnit.test('TEST getFact (aysnc)', async assert => {
-  assert.expect(2) // expect two async tests
+  assert.expect(2) 
   const ans = await getFact()
   const len = ans.length
   console.info(`FETCHED ${len} characters: ${ans}`)

@@ -1,4 +1,4 @@
-const randomFactURL = 'https://cors-anywhere.herokuapp.com/https://catfact.ninja/fact'
+const randomFactURL = 'https://uselessfacts.jsph.pl/random.html'
 
 export const getFact = async () => {
     try {

@@ -1,11 +1,11 @@
-const randomFactURL = 'https://uselessfacts.jsph.pl/random.html'
+const randomFactURL = 'http://www.djtech.net/humor/useless_facts.htm'
 
-export const getFact = async () => {
+const getFact = async () => {
     try {
       const response = await fetch(randomFactURL)
       const obj = await response.json()
       console.log(`FETCHED. Responce JSON ${obj}`)
-      const fact = obj.value.fact || 'No fact'
+      const fact = obj.fact || 'No fact'
       return fact
     } catch (error) { console.error(error) }
   }
@@ -13,9 +13,9 @@ export const getFact = async () => {
 
   const updateWithFact = async (event) => {
     try {
-      document.getElementById('getFactButton').innerHTML = ''
+      document.getElementById('getFact').innerHTML = ''
       const answer = await getFact()
-      document.getElementById('getFactButton').innerHTML = answer
+      document.getElementById('getFact').innerHTML = answer
     } catch (error) { console.error(error) }
   }
 
@@ -29,4 +29,9 @@ document.addEventListener('click', () => {
     document.getElementById('count').innerHTML = countResult
     localStorage.setItem('countOfClicks', count) 
   })
+  
+  document.getElementById('removeFetch').addEventListener('click', () => {
+    localStorage.removeItem('countOfClicks')
+    updateWithFact(event)
+})  
 

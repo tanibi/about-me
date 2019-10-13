@@ -17,7 +17,7 @@ const validate = async (event) => {
       if (document.querySelector('#temperature').checkValidity()) {
         const regex = /[^a-zA-Z_]/g
         const i = parseInt(document.querySelector('#temperature').value)
-        const ans = `Temperature in Celsius is ${convertTemp(i)}.`
+        const ans = `Temperature in Celsius: ${convertTemp(i)}.`
         document.querySelector('#result').innerHTML = ans
       }
     } catch (error) { console.error(error) }

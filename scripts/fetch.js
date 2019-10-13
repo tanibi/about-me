@@ -1,11 +1,11 @@
-const randomFactURL = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]'
+const randomFactURL = 'http://numbersapi.com/random/trivia'
 
 const getFact = async () => {
     try {
       const response = await fetch(randomFactURL)
       const obj = await response.json()
-      console.log(`FETCHED. Responce JSON ${obj}`)
-      const fact = obj.fact || 'No fact'
+      console.log(`FETCHED. Response JSON ${obj}`)
+      const fact = obj.fact
       return fact
     } catch (error) { console.error(error) }
   }

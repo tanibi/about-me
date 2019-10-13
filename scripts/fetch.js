@@ -10,23 +10,27 @@ export const getRandomFact = async () => {
     } catch (error) { console.error(error) }
   }
 
-const updateWithFact = async (event) => {
-  const def = 'Chuck Norris went out of an infinite loop.'
-  document.querySelector('#fact').innerHTML = await getJoke() || def
-}
 
 const updateWithFact = async (event) => {
     try {
-      document.getElementById('catFact').innerHTML = ''
+      document.getElementById('randomFact').innerHTML = ''
       const result = await getFact()
-      document.getElementById('catFact').innerHTML = result
+      document.getElementById('randomFact').innerHTML = result
     } catch (error) { 
         console.error(error) 
       }
   }
 
 document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'btn') { updateWithFact(event) }
+  if (event.target && event.target.id === 'getFact') 
+  { updateWithFact(event) }
+
+  const startCount = parseInt(localStorage.getItem('numberOfFetches')) || 0
+  const count = startCount + 1
+  const countResult = `You have fetched ${count} random facts.`
+  document.getElementById('count').innerHTML = countResult
+
+  localStorage.setItem('numberOfFetches', count)
 })
 
 document.addEventListener('DOMContentLoaded', updateWithFact)

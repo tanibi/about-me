@@ -19,16 +19,15 @@ export const getFact = async () => {
     } catch (error) { console.error(error) }
   }
 
-document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'getFact') 
-  { updateWithFact(event) }
+document.addEventListener('click', () => {
+    if (event.target && event.target.id === 'getFactButton') 
+    { updateWithFact(event) }
 
-  const startCount = parseInt(localStorage.getItem('numberOfFetches')) || 0
-  const count = startCount + 1
-  const countResult = `You have fetched ${count} random facts.`
-  document.getElementById('count').innerHTML = countResult
+    const origCount = parseInt(localStorage.getItem('countOfClicks')) || 0
+    const count = origCount + 1
+    const countResult = `You have fetched ${count} random facts.`
+    document.getElementById('count').innerHTML = countResult
+    localStorage.setItem('countOfClicks', count) 
+  })
 
-  localStorage.setItem('numberOfFetches', count)
-})
-
-document.addEventListener('DOMContentLoaded', updateWithFact)
+  

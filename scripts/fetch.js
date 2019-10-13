@@ -5,7 +5,7 @@ const getFact = async () => {
       const response = await fetch(randomFactURL)
       const obj = await response.json()
       console.log(`FETCHED. Response JSON ${obj}`)
-      const fact = obj.fact
+      const fact = obj.value.fact || 'No fact'
       return fact
     } catch (error) { console.error(error) }
   }

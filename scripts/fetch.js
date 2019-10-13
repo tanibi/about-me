@@ -1,4 +1,4 @@
-const randomFactURL = 'https://uselessfacts.jsph.pl/random.html'
+const randomFactURL = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]'
 
 export const getRandomFact = async () => {
     try {

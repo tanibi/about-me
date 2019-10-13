@@ -1,4 +1,4 @@
-const randomFactURL = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]'
+const randomFactURL = 'https://cors-anywhere.herokuapp.com/https://catfact.ninja/fact'
 
 export const getFact = async () => {
     try {
@@ -13,9 +13,9 @@ export const getFact = async () => {
 
   const updateWithFact = async (event) => {
     try {
-      document.querySelector('#result').innerHTML = ''
+      document.getElementById('getFactButton').innerHTML = ''
       const answer = await getFact()
-      document.querySelector('#result').innerHTML = answer
+      document.getElementById('getFactButton').innerHTML = answer
     } catch (error) { console.error(error) }
   }
 
@@ -30,4 +30,3 @@ document.addEventListener('click', () => {
     localStorage.setItem('countOfClicks', count) 
   })
 
-  

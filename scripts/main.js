@@ -23,17 +23,8 @@ const validate = async (event) => {
     } catch (error) { console.error(error) }
   }
 
-document.addEventListener('focusout', event => {
-    if ((event.target && event.target.id === 'temperature')) {
-      validate(event)
-    }
-  })
-  
   document.addEventListener('click', event => {
     if (event.target && event.target.id === 'Button') { updateWithconvertTemp(event) }
   })
   
-  document.addEventListener('click', event => {
-    if (event.target && event.target.id === 'getFactButton') { updateWithFact(event) }
-  })
 

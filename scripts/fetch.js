@@ -1,24 +1,22 @@
 const randomFactURL = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]'
 
-export const getRandomFact = async () => {
+export const getFact = async () => {
     try {
       const response = await fetch(randomFactURL)
       const obj = await response.json()
-      console.log(`FETCHED:${obj}`)
+      console.log(`FETCHED. Responce JSON ${obj}`)
       const fact = obj.value.fact || 'No fact'
       return fact
     } catch (error) { console.error(error) }
   }
 
 
-const updateWithFact = async (event) => {
+  const updateWithFact = async (event) => {
     try {
-      document.getElementById('randomFact').innerHTML = ''
-      const result = await getFact()
-      document.getElementById('randomFact').innerHTML = result
-    } catch (error) { 
-        console.error(error) 
-      }
+      document.querySelector('#result').innerHTML = ''
+      const answer = await getFact()
+      document.querySelector('#result').innerHTML = answer
+    } catch (error) { console.error(error) }
   }
 
 document.addEventListener('click', event => {

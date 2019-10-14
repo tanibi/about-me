@@ -38,3 +38,5 @@ Computer Science
 1. [w3schools](https://www.w3schools.com)
 2. [Dr. Case](https://profcase.github.io/about-me-20/)
 3. [Bootstrap](https://getbootstrap.com/)
+4. [Ajax](https://github.com/profcase/js-gui-ajax)
+5. [Tests](https://github.com/profcase/js-gui-with-tests)
